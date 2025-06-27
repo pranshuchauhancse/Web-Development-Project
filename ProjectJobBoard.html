@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Board - Find Your Dream Job</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #0077ff;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .navbar ul li {
+      cursor: pointer;
+    }
+
+    .navbar .actions {
+      display: flex;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+
+    .btn-green {
+      background: #00c853;
+      color: white;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(to right, #0077ff, #3399ff);
+      color: white;
+      padding: 80px 40px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero .upload-btn {
+      background: #00e676;
+      padding: 12px 25px;
+      font-size: 16px;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .hero-img {
+      margin-top: 40px;
+      max-width: 500px;
+    }
+
+    /* SEARCH BAR */
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 30px;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-top: -30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .search-bar input, .search-bar select {
+      padding: 10px;
+      width: 200px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .search-bar .search-btn {
+      background: #00c853;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .search-bar {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">💼 Job Board</div>
+    <ul>
+      <li>Home</li>
+      <li>Browse Job</li>
+      <li>Pages</li>
+      <li>Blog</li>
+      <li>Contact</li>
+    </ul>
+    <div class="actions">
+      <button class="btn btn-outline">Log In</button>
+      <button class="btn btn-green">Post A Job</button>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h4>4536+ Jobs listed</h4>
+    <h1>Find your Dream Job</h1>
+    <p>We provide online job listings with quick updates that suit your skillset and goals.</p>
+    <button class="upload-btn">Upload Your Resume</button>
+    <br><br>
+    <img src="C:\Users\Win\Desktop\WEB DEVELOPMENT\Job Illustration.jpg" alt="Job Illustration" class="hero-img">
+  </section>
+
+  <!-- SEARCH BAR -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search keyword" />
+    <input type="text" placeholder="Location" />
+    <select>
+      <option value="">Category</option>
+      <option>Developer</option>
+      <option>Designer</option>
+      <option>Manager</option>
+    </select>
+    <button class="search-btn">Find Job</button>
+  </div>
+
+</body>
+</html>
